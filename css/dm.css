@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*居中对齐*/
+
+p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li{margin:0px;padding:0px;}
+
+li {
+	list-style: none;/*去除列表标记*/
+}
+
+a {
+	text-decoration: none;/*去掉下划线*/
+	color: #000;
+}
+
+img {
+	display: block;/*img是 行内替换元素？*/
+	/*https://blog.csdn.net/sunhl951/article/details/80039832*/
+}
+
+input {
+	border: none;/*没有边框*/
+}
+
+.fl {
+	float: left;
+}
+
+.header {
+	height: 360px;
+	background: #00b38a;
+}
+
+.boxCon {
+	position: absolute;
+	top: 77px;
+	width: 700px;
+	height: 490px;
+	/*background: #fff;*/
+	left: 50%;/*父盒子50%*/
+	margin-left: -325px;/*不懂*/
+
+}
+
+.boxCon .forBox {
+	height: 400px;
+	border: 1px solid #dce1e6;
+	padding: 6px;
+	background: #fff;
+
+}
+
+/*logo*/
+.boxCon .logo {
+	height: 77px;
+	background:url("../img2/logo.png")no-repeat;/*这里忘记多层文件路径*/
+}
+
+/*二维码和微信快速登录*/
+.boxCon .forBox .imgBox img {
+	margin-right: 6px;
+}
+
+/*伪元素只能用于块级元素，display: block*/
+/*https://www.w3school.com.cn/css/css_pseudo_elements.asp*/
+.clearFixed:after {
+	content: "";
+	display: block;
+	clear: both;
+	/*清除浮动（如果不清除，登录模块跑上来）*/
+}
+
+/*登录*/
+.boxCon .forBox .inpLeft {
+	position: relative;
+	width: 290px;
+	height: 277px;
+	padding: 0px 63px;
+	border-right: 1px dashed #555;
+}
+.boxCon .forBox .inpLeft .line1 {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #555;
+	font-size: 18px;
+}
+
+.boxCon .forBox .inpLeft .line1 p:nth-child(1) {
+	color: #00B38A;
+	border-bottom: 1px solid #00B38A;
+}
+
+.boxCon .forBox .inpLeft .line1 p {
+	width: 145px;
+	text-align: center;
+}
+
+.boxCon .forBox .inpLeft .lineInp {
+	height: 64px;
+	border-bottom: 1px solid #555;
+
+}
+
+.boxCon .forBox .inpLeft .lineInp input {
+	width: 100%;/*inpLeft*/
+	height: 44px;
+	padding-top: 20px;
+	
+}
+
+input {
+	border: none;
+}
+
+.boxCon .forBox .inpLeft .txt {
+	color: #00B38A;
+	height: 58px;
+	line-height: 58px;
+	font-size: 12px;
+	text-align: right;
+}
+
+/*登录*/
+.boxCon .forBox .inpLeft input[type="submit"] {
+	height: 48px;
+	width: 100%;
+	line-height: 48px;
+	font-size: 18px;
+	background-color: #00B38A;
+	color: #fff;
+	text-align: center;
+	
+}
+
+.boxCon .forBox .inpLeft .or {
+	position: absolute;/*.inpLeft*/
+	width: 18px;
+	height: 18px;
+	right: -8px;
+	top: 50%;
+	margin-top: -9px;
+	background: #fff;
+	text-align: center;
+	color: #555;
+
+}
+
+/*登录方式（sinal...）*/
+.boxCon .forBox .inpRight {
+	padding-left: 52px;
+	padding-top: 80px;
+	color: #555;
+	font-size: 14px;
+}
+
+.boxCon .forBox .inpRight .txt2 {
+	font-size: 16px;
+	color: #00B38A;
+	margin-bottom: 44px;
+	height: 30px;
+	line-height: 30px;
+}
+/*此时div->.txt2是块元素，独占一行;在这个div中还有一个img元素，让其和.txt2共享一行
+* 方法：让img变为行内块元素
+*/
+.boxCon .forBox .inpRight .txt2 img {
+	display: inline-block;
+	margin-left: 3px;
+	vertical-align: middle;
+}
+
+.boxCon .forBox .inpRight .txt3 img {
+	margin-right: 24px;
+	margin-top: 10px;
+}
+
+
+
+
+/* 
+选择器
+CSS 属性选择器就是指可以根bai据元du素的属性以及属性值来选择元素。zhi
+
+input的type有
+button
+
+checkbox
+
+file
+
+hidden
+
+image
+
+password
+
+radio
+
+reset
+
+submit
+
+text
+
+input[type="submit"]就可以dao了选择type为submit的input标签。
+*/
+
+
+
+
